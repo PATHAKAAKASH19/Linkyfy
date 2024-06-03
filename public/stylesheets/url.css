@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+   
+    height: 10%;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding: 2vmin 20vmin ;
+}
+
+.nav2 {
+   display: flex;
+ 
+   width: 40%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.nav2 h3 {
+    font-weight: 200;
+}
+
+.img1 {
+    width: 6vmin;
+    height: 8vmin;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    font-size: 1.2em;
+    object-fit: contain;
+    gap: 10%;
+}
+
+.button {
+    height: 8vmin;
+    width: 30vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login , .signup {
+    padding: 4% 8%;
+    border-radius: 1.5em;
+    background-color: #007bff;
+    color: white;
+    font-weight: 800;
+    font-size: 1.2em;
+    border: none;
+}
+
+.hero-sec {
+    width: 100%;
+    display: flex;
+    padding: 2vmin 20vmin ;
+}
+
+.right {
+  
+  width: 50%;
+}
+
+.right img {
+    width:100%;
+    height: 95%;
+}
+
+.left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+   
+    padding: 4% 5% 4% 0%;
+    
+}
+
+.left h1 {
+    padding-top: 3%;
+    font-size: 60px;
+    margin-bottom: 2%;
+    line-height: 1em;
+}
+
+.left h1 span {
+    color: #007bff;
+}
+
+.left p {
+    word-spacing: 0.2em;
+    font-size: 18px;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+.left button {
+   
+   width: 30%;
+    margin-top: 8%;
+    padding: 3% ;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.8em;
+    font-size: 120%;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    
+}
