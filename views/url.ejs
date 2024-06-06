@@ -59,15 +59,32 @@
 
         <div class="quote">
             <h3>Great connections start with a click</h3>
-            <h1> Sign up for a free account and put Bitly to work</h1>
+            <h1> Sign up for a free account and put Bitly to works</h1>
         </div>
     <form method="post" action="/home/url">
-        <label for="url">url</label>
+       
+        <label class="text-large">Shorten a long link</label> 
+       
+        <label for="url">Paste a long URL</label>
         <input type="text" placeholder="generate Url" name="url" id="url">
+        
+           <% if (locals.err !== null) { %>
+            <div class="err"><label><%= locals.err %></label> </div>
+           <% } %>
+             
+       
         <button type="submit">generate Url</button>
     </form>
 
    </div>
+    
+  <% if (locals.shortUrl) { %>
+     
+
+  <% } %>
+    
+   <div class="allurls"></div>
+
    </main>
 </body>
 </html>

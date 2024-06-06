@@ -5,7 +5,7 @@ const uid = new shortId({ length:10 })
 
 async function generateUrl(req , res) {
 
-   if(!req.body.url) return res.json({err: "no url provided"}) 
+   if(!req.body.url) return res.render("url", {err: "no url provided"}) 
    
    const shortUrl =  uid.rnd()
     
@@ -18,7 +18,7 @@ async function generateUrl(req , res) {
     })
     
     
-    res.json({shortUrl: shortUrl})
+    res.render("url",{shortUrl: shortUrl})
 }
 
 
