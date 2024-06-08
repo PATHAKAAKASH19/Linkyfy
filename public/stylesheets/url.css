@@ -243,18 +243,25 @@ form button {
 .ques {
     width: 45%;
     padding: 2% 0px 0px 0px;
+    cursor: pointer;
 }
 
-.ques p {
+.ques .inactive {
     padding: 1vmax 1vmax 0vmax 3.8vmax;
     display: flex;
     flex-wrap: wrap;
     display: none;
 }
 
+.ques .active {
+    display: block;
+    word-spacing: 0.4vmax;
+    font-size: 1vmax;
+}
+
 .footer {
     margin: 4vmax 0px 0px 0px;
-    height: 20vmax;
+    height: 10vmax;
     border-top: 1px solid;
     display: flex;
    padding: 2vmin 20vmin 0vmin 20vmin;
@@ -289,3 +296,4 @@ form button {
     display: flex; 
     
 }
+

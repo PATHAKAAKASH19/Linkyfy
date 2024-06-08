@@ -105,7 +105,7 @@
             <i class="fa-solid fa-angle-up"></i>
             <h3>What is Linkyfy?</h3>
           </div>
-          <p>
+          <p  class="inactive">
             Linkyfy is a URL shortening service that allows you to take long web
             addresses and convert them into shorter, more manageable links.
           </p>
@@ -116,7 +116,7 @@
             <i class="fa-solid fa-angle-up"></i>
             <h3>How does Linkyfy work?</h3>
           </div>
-          <p>
+          <p class="inactive">
             Simply enter the long URL you want to shorten into the input field on the
             Linkyfy homepage and click "Shorten". Linkyfy will generate a unique, shorter 
             URL that redirects to your original link.
@@ -128,7 +128,7 @@
             <i class="fa-solid fa-angle-up"></i>
             <h3> Is Linkyfy secure?</h3>
           </div>
-          <p>
+          <p  class="inactive">
            
             Yes, Linkyfy takes security seriously. We use HTTPS to encrypt your data and 
             protect your information. Additionally, we have measures in place to detect 
@@ -141,7 +141,7 @@
             <i class="fa-solid fa-angle-up"></i>
             <h3>   How long do shortened URLs last?</h3>
           </div>
-          <p>
+          <p  class="inactive">
             Shortened URLs created with Linkyfy are permanent and do not expire.
              However, if a URL is found to be in violation of our terms of service, 
              it may be removed.
@@ -168,11 +168,19 @@
 
 
     <script>
-        const questBoxes = document.querySelectorAll("ques-box")
-
-        questBoxes.forEach((questBox , index) => {
-
-        })
+          const questBoxes = document.querySelectorAll(".ques-box");
+          
+          questBoxes.forEach((questBox) => {
+            questBox.addEventListener("click", () => {
+              const iconRotate =  questBox.querySelector(".fa-solid")
+              const toggle = questBox.nextElementSibling;
+                
+              if (toggle ) {
+                  iconRotate.classList.toggle("fa-rotate-180")
+                    toggle.classList.toggle('active'); // Toggle the active class
+                   
+            }}
+            )})
     </script>
   </body>
 </html>
