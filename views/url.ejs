@@ -1,90 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linkyfy</title>
-    <link rel="icon" href="/images/link_icon.svg">
-    <link rel="stylesheet" href="/stylesheets/url.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..
+    <link rel="icon" href="/images/link_icon.svg" />
+    <link rel="stylesheet" href="/stylesheets/url.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..
    900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,
-   400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+   400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <main>
-
-
-        <div class="navbar">
-            <div class="img1">
-
-            <img src="/images/link_icon.svg" alt="company_logo">
-            <div class="name">
-                <h2>Linkyfy</h2>
-            </div>
-
-           </div>
-           
-           <div class="nav2">
-            <h3>ABOUT</h3>
-            <h3>FAQ</h3>
-            <h3>PRICING</h3>
+      <div class="navbar">
+        <div class="img1">
+          <img src="/images/link_icon.svg" alt="company_logo" />
+          <div class="name">
+            <h2>Linkyfy</h2>
+          </div>
         </div>
 
-           <div class="button">
-              <button type="button" class="login">login</button>
-              <button type="button" class="signup">signup</button>
-           </div>
+        <div class="nav2">
+          <h3>ABOUT</h3>
+          <h3>FAQ</h3>
+          <h3>PRICING</h3>
         </div>
 
-        <div class="hero-sec">
-            <div class="left">
-               <h1>Build stronger digital <span>Connections</span></h1>
-               <p>Use our URL shortener, QR Codes, and landing pages to engage your 
-                audience and connect them to the right information. Build, edit, and 
-                track everything inside the Linkyfy Connections Platform.</p>
+        <div class="button">
+          <button type="button" class="login">login</button>
+          <button type="button" class="signup">signup</button>
+        </div>
+      </div>
 
-                <button type="button" class="cta">try for free</button>
-            </div>
+      <div class="hero-sec">
+        <div class="left">
+          <h1>Build stronger digital <span>Connections</span></h1>
+          <p>
+            Use our URL shortener, QR Codes, and landing pages to engage your
+            audience and connect them to the right information. Build, edit, and
+            track everything inside the Linkyfy Connections Platform.
+          </p>
 
-            <div class="right">
-                <img src="/images/main-img.jpg" alt="">
-            </div>
+          <button type="button" class="cta">try for free</button>
         </div>
 
+        <div class="right">
+          <img src="/images/main-img.jpg" alt="" />
+        </div>
+      </div>
 
-    <div class="body">
-
+      <div class="body">
         <div class="quote">
-            <h3>Great connections start with a click</h3>
-            <h1> Sign up for a free account and put Bitly to works</h1>
+          <h3>Great connections start with a click</h3>
+          <h1>Sign up for a free account and put Linkyfy to works</h1>
         </div>
-    <form method="post" action="/home/url">
-       
-        <label class="text-large">Shorten a long link</label> 
-       
-        <label for="url">Paste a long URL</label>
-        <input type="text" placeholder="generate Url" name="url" id="url">
-        
-           <% if (locals.err !== null) { %>
-            <div class="err"><label><%= locals.err %></label> </div>
-           <% } %>
-             
-       
-        <button type="submit">generate Url</button>
-    </form>
+        <form method="post" action="/home/url">
+          <label class="text-large">Shorten a long link</label>
 
-   </div>
-    
-  <% if (locals.shortUrl) { %>
-     
+          <label for="url">Paste a long URL</label>
+          <input type="text" placeholder="generate Url" name="url" id="url" />
 
-  <% } %>
-    
-   <div class="allurls"></div>
+          <% if (locals.err !== undefined) { %>
+          <div class="err"><%= locals.err %></div>
+          <% } %>
 
-   </main>
-</body>
+          <button type="submit">generate Url</button>
+        </form>
+      </div>
+
+      <div class="about">
+
+        <div class="left"><img src="/images/undraw.svg" alt="" /></div>
+        <div class="right">
+          <p>
+            At Linkyfy, we believe that simplicity and functionality should go
+            hand in hand. Our platform is built to help you save time, enhance
+            your online presence, and track the effectiveness of your shared
+            links. Whether you're a digital marketer, content creator, or just
+            someone who loves to share interesting links, Linkyfy is here to
+            make your life easier.
+          </p>
+        </div>
+
+       
+      </div>
+
+      <div class="faq">
+        <h2>Frequently Asked Question</h2>
+        <div class="ques">
+          <div class="ques-box">
+            <i class="fa-solid fa-angle-up"></i>
+            <h3>What is Linkyfy?</h3>
+          </div>
+          <p>
+            Linkyfy is a URL shortening service that allows you to take long web
+            addresses and convert them into shorter, more manageable links.
+          </p>
+        </div>
+
+        <div class="ques">
+          <div class="ques-box">
+            <i class="fa-solid fa-angle-up"></i>
+            <h3>How does Linkyfy work?</h3>
+          </div>
+          <p>
+            Simply enter the long URL you want to shorten into the input field on the
+            Linkyfy homepage and click "Shorten". Linkyfy will generate a unique, shorter 
+            URL that redirects to your original link.
+          </p>
+        </div>
+
+        <div class="ques">
+          <div class="ques-box">
+            <i class="fa-solid fa-angle-up"></i>
+            <h3> Is Linkyfy secure?</h3>
+          </div>
+          <p>
+           
+            Yes, Linkyfy takes security seriously. We use HTTPS to encrypt your data and 
+            protect your information. Additionally, we have measures in place to detect 
+            and prevent spam and malicious links.
+          </p>
+        </div>
+
+        <div class="ques">
+          <div class="ques-box">
+            <i class="fa-solid fa-angle-up"></i>
+            <h3>   How long do shortened URLs last?</h3>
+          </div>
+          <p>
+            Shortened URLs created with Linkyfy are permanent and do not expire.
+             However, if a URL is found to be in violation of our terms of service, 
+             it may be removed.
+
+
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="logo">
+          <img src="/images/link_icon.svg" alt="logo" />
+          <h2>Linkyfy</h2>
+        </div>
+        <div class="socials">
+          <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+         <a href=""> <i class="fa-brands fa-twitter fa-2xl"></i></a>
+         <a href=""> <i class="fa-brands fa-github fa-2xl"></i></a>
+         <a href=""> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        </div>
+      </div>
+    </main>
+
+
+
+    <script>
+        const questBoxes = document.querySelectorAll("ques-box")
+
+        questBoxes.forEach((questBox , index) => {
+
+        })
+    </script>
+  </body>
 </html>

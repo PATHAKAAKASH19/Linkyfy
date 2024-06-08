@@ -38,5 +38,4 @@ function handleLogIn(req, res) {
 
 
 
-
 module.exports = {showLogInPage, showSignUpPage, handleSignUp, handleLogIn};
