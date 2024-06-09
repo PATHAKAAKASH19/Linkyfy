@@ -8,7 +8,6 @@ async function generateUrl(req , res) {
     if(!req.body.url) return res.render("url", {err: "no url provided"}) 
     if(req.isAuthenticated()){
        const shortUrl =  uid.rnd()
-       console.log("hello world")
        const urlData = await urlModel.create({
         url: req.body.url,
         shortUrl: shortUrl,

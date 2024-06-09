@@ -37,5 +37,17 @@ function handleLogIn(req, res) {
 }
 
 
+function handleLogOut( req , res) {
+   
+    req.logout(function(err){
+        if(err) {
+           return next(err);
+        }
 
-module.exports = {showLogInPage, showSignUpPage, handleSignUp, handleLogIn};
+    })
+    res.redirect("/home/url")
+   
+}
+
+
+module.exports = {showLogInPage, showSignUpPage, handleSignUp, handleLogIn, handleLogOut};

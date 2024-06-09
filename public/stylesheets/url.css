@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Epilogue", sans-serif;
     padding: 0px;
     margin: 0px;
    
@@ -57,12 +57,13 @@ main {
     align-items: center;
 }
 
-.login , .signup {
+.logout , .signup {
     padding: 4% 8%;
     border-radius: 1.5em;
-    background-color: #007bff;
+    background-color:#007bff;
+    
     color: white;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.2em;
     border: none;
 }
@@ -115,16 +116,16 @@ main {
     width: 30%;
     margin-top: 8%;
     padding: 3% ;
-    background-color: #007bff;
+    background-color:#007bff;
     color: white;
     border: none;
     border-radius: 0.8em;
     font-size: 120%;
-    font-weight: 800;
+    font-weight: 600;
     cursor: pointer;
 }
 
-.body {
+#body {
     display: flex;
     flex-direction: column;
     background-color: #F5F6F7;
@@ -139,11 +140,17 @@ main {
     margin: 0.7vmax;
     color: #007bff;
     padding: 2% 0px 0px 0px;
+    font-weight: 500;
+   
 }
 
 .quote {
     display: flex;
     flex-direction: column;
+}
+
+.quote h1 {
+    font-weight: 500;
 }
 
 form {
@@ -158,12 +165,12 @@ form {
     width: 60vmax;
     background-color: white;
    
-
+   
 }
 
 form label {
     font-size: 1.2vmax;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 form .text-large {
@@ -191,7 +198,7 @@ form button {
   border-radius: 0.6em;
   padding: 1% 4%;
   font-size: 1.2em;
-  font-weight: 900;
+  font-weight: 500;
   border: none ;
   background-color:#007bff;
   color: white;
@@ -205,7 +212,7 @@ form button {
 }
 
 
-.about {
+#about {
     display: flex;
     margin-top: 6vmax;
     padding: 2vmin 20vmin 0vmin 20vmin;
@@ -213,17 +220,18 @@ form button {
 
 
 
-.about .right {
+#about .right {
    margin: 0px 2vmax 0px 0px;
-    font-size: 1.2vmax;
+    font-size: 1vmax;
+    line-height: 1.5em;
     word-spacing: 0.2vmax;
     display: flex;
     justify-content: center;
     align-items: center;
-   font-weight: 100;
+   font-weight: 500;
 }
 
-.faq {
+#faq {
     margin-top: 6vmax;
     display: flex;
     justify-content: center;
@@ -296,4 +304,15 @@ form button {
     display: flex; 
     
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button a {
+    color: white;
+}
+
+
 
